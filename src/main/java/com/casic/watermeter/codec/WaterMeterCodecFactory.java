@@ -9,7 +9,9 @@ public class WaterMeterCodecFactory extends DemuxingProtocolCodecFactory {
 	
 	private MessageDecoder decoder;
 	private MessageEncoder<Msg> encoder;
-
+	/*
+	 * 构造函数，生成编码器和解码器的工厂
+	 * */
 	public WaterMeterCodecFactory(MessageDecoder decoder,MessageEncoder<Msg> encoder) {
 		this.decoder = decoder;
 		this.encoder = encoder;
