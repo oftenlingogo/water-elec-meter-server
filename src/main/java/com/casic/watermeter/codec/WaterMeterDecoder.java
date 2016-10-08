@@ -11,7 +11,9 @@ public class WaterMeterDecoder implements MessageDecoder {
 	public MessageDecoderResult decodable(IoSession session, IoBuffer in) {
 		return MessageDecoderResult.OK;
 	}
-
+	/*
+	 * 
+	 */
 	public MessageDecoderResult decode(IoSession session, IoBuffer in, ProtocolDecoderOutput out) throws Exception {
 		byte[] data = new byte[in.remaining()];
 		in.get(data);
